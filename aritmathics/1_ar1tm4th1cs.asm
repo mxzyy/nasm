@@ -1,6 +1,4 @@
 section .data
-    num1 db '5', 0           ; Angka pertama dalam bentuk string
-    num2 db '2', 0           ; Angka kedua dalam bentuk string
     result db '0', 10         ; Tempat untuk menyimpan hasil
     length equ $ - result     ; Menghitung panjang hasil
 
@@ -9,8 +7,8 @@ section .text
 
 _start:
     ; Menjumlahkan 1 + 1
-    mov rax, 1               ; Memuat angka 1 ke register rax
-    add rax, 1               ; Menjumlahkan 1
+    mov rax, 4               ; Memuat angka 1 ke register rax
+    add rax, 2               ; Menjumlahkan 1
 
     ; Konversi hasil ke string
     add rax, '0'             ; Mengonversi hasil ke karakter ASCII
